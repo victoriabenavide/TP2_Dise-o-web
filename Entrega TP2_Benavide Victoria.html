@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Better You</title>
+  <style>
+
+
+
+    :root {
+      --naranja-primario: #e5891a;
+      --naranja-secundario: #eaa33d;
+      --crema-primario: #eac68c;
+      --crema-secundario: #faf7e8;
+    }
+
+    h3 {
+      color: #eaa33d;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+
+    header {
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px 333333;
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a:hover {
+      color: #f28b22;
+    }
+
+
+    .descargar {
+      background-color: #f28b22;
+      color: #faf7e8;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .calltoaction {
+      background-color: #f28b22;
+      color: #faf7e8;
+      padding: 15px 20px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .calltoaction:hover
+    {
+      background-color: #f28b22;
+      color: #faf7e8;
+    }
+
+    .inicio {
+      background-color: #eaa33d;
+      text-align: center;
+      padding: 50px;
+}
+
+.titulo h1 {
+  color: #faf7e8;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.inicio p {
+  color: #faf7e8;
+  margin-bottom: 20px;
+}
+
+.calltoaction {
+  display: inline-block;
+  background-color: #faf7e8;
+  color: #f28b22;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+    .galeria, .beneficios, .testimonios, .preguntas, .calltoaction {
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+
+    .galeria {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      margin-top: 8%;
+}
+
+    .galeria img {
+      width: 200px;
+      border-radius: 30px;
+      transition: transform 0.3s ease;
+}
+
+    .imagen1 {
+      margin-right: 5%;
+    }
+
+    .imagen2 {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
+    .imagen3 {
+      margin-left: 5%;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.1);
+}
+
+    .acerca-de {
+      text-align: center;
+      padding: 5%;
+    }
+
+    .acerca-de h2 {
+      color: #f28b22;
+    }
+
+    .acerca-de p {
+      width: 55%;
+      margin-left: auto;
+      margin-right: auto;
+    } 
+
+    .beneficios h2 {
+  color: #f28b22;
+}
+
+.beneficios .h4 {
+  text-align: center;
+  color: #eaa33d;
+}
+
+.beneficios1-3, .beneficios4-6 {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.beneficio1, .beneficio2, .beneficio3, .beneficio4, .beneficio5, .beneficio6 {
+  width: 20%;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icono {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.beneficio1 h3, .beneficio2 h3, .beneficio3 h3,
+.beneficio4 h3, .beneficio5 h3, .beneficio6 h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #f28b22; 
+}
+
+.beneficio1 p, .beneficio2 p, .beneficio3 p,
+.beneficio4 p, .beneficio5 p, .beneficio6 p {
+  margin: 0;
+  text-align: center; 
+}
+
+    .experiencias h2 {
+      color: #f28b22;
+    }
+    .experiencias {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffffff;
+      margin-bottom: 10%;
+    }
+
+    .experiencias h3 {
+      font-size: 2rem;
+      color: #eaa33d;
+      margin-bottom: 2rem;
+      font-weight: bold;
+    }
+
+    .tarjeta {
+  display: inline-block;
+  background-color: #eaa33d;
+  color: #faf7e8;
+  border-radius: 20px;
+  width: 200px;
+  padding: 1.5rem;
+  margin: 0 1rem;
+  box-shadow: 0 4px 8px #333333;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: scale(1.1);
+}
+
+.tarjeta img.icono-carita {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+    .tarjeta p {
+      font-size: 15px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .estrellas {
+      font-size: 20px;
+      color: #faf7e8; 
+    }
+
+    .preguntasfrecuentes {
+      text-align: center;
+      margin-bottom: 10%;
+    }
+
+    .preguntasfrecuentes h2 {
+      color: #f28b22;
+    }
+
+    .preguntas1 {
+      width: 55%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 2%;
+    }
+
+    .preguntas2 {
+      width: 55%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 2%;
+    }
+
+    .preguntas3 {
+      width: 55%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 7%;
+    }
+
+    .betteryoulogo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .betteryoulogo img {
+      max-width: 150px;
+      max-height: 150px;
+      width: auto;
+      height: auto;
+    }
+
+    .descagar-app {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .descagar-app p {
+      font-size: small;
+      margin: 20px;
+    }
+
+    .calltoaction-boton2 {
+    background-color: #e5891a;
+     color: #faf7e8;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .footer {
+      background-color: #eaa33d;
+      color: #faf7e8;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+      margin-top: 7%;
+    }
+
+    .footer p { 
+      font-size: small;
+    }
+    .redes-links a {
+      color:#faf7e8;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .redes-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="./Imágenes/APP_LOGO.png" alt="Better You Logo" width="50">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Inicio</a></li>
+      <li><a href="#ad">Acerca de</a></li>
+      <li><a href="#bnf">Beneficios</a></li>
+      <li><a href="#exp">Experiencias</a></li>
+      <li><a href="#pf">Preguntas</a></li>
+    </ul>
+    <a href="#descargar" class="descargar">DESCARGAR APP</a>
+  </header>
+
+  <div class="inicio" id="home">
+    <div class="titulo"><h1>BETTER YOU</h1></div>
+    <p>Transforma tus hábitos, mejora tu vida</p>
+    <a href="#descargar" class="calltoaction">DESCARGAR APP</a>
+  </div>
+
+    <div class="galeria">
+      <img class="imagen1" src="./Imágenes/Home.png" alt="interfaz">
+      <img class="imagen2" src="./Imágenes/Principal.png" alt="principal">
+      <img class="imagen3" src="./Imágenes/Inicio.png" alt="inicio">
+    </div>
+
+  <section class="acerca-de" id="ad">
+    <h2>Acerca de</h2>
+    <p>Imaginá cumplir todas tus tareas diarias y llevar una vida saludable con hábitos incluidos en tu rutina dejando de procastinar. ¿no sería íncreible? ¿no te generaría un orden mental? Bueno, te presento BETTER YOU, unaaplicación en donde vas a poder hacer eso y mucho más! Te invito a conocerla...Me llamo Victoria Benavide. Soy la creadorade esta aplicación. Tengo 20 años y estudio Diseño Gráfico en Buenos Aires, Argentina yestoy presentando este proyecto para micurso de diseño UX/UI.</p>
+  </section>
+
+  <section class="beneficios" id="bnf">
+    <h2>Beneficios Clave</h2>
+    <div class="beneficios1-3">
+      <div class="beneficio1">
+        <img src="./Imágenes/Ícono1.png" alt="Icono 1" class="icono">
+        <h3>Interfaz intuitiva y fácil de usar</h3>
+        <p>Diseñada para que cualquier persona, sin importar su nivel tecnológico, pueda navegar y configurar sus rutinas de manera sencilla.</p>
+      </div>
+      <div class="beneficio2">
+        <img src="./Imágenes/Ícono2.png" alt="Icono 2" class="icono">
+        <h3>Recordatorios personalizados para cada hábito</h3>
+        <p>Recibe notificaciones adaptadas a tus horarios y necesidades, ayudándote a mantener el enfoque en lo que más importa.</p>
+      </div>
+      <div class="beneficio3">
+        <img src="./Imágenes/Ícono3.png" alt="Icono 3" class="icono">
+        <h3>Seguimiento del progreso con gráficos</h3>
+        <p>Visualiza tus logros diarios, semanales y mensuales mediante gráficos claros que motivan a continuar avanzando.</p>    
+      </div>
+    </div>
+    <div class="beneficios4-6">
+      <div class="beneficio4">
+        <img src="./Imágenes/ícono4.png" alt="Icono 4" class="icono">
+        <h3>Ejercicios para mejorar tu bienestar mental</h3>
+        <p>Incluye una sección con prácticas guiadas como respiración consciente y reflexiones diarias, diseñadas para reducir el estrés y fomentar el equilibrio emocional.</p>
+      </div>
+      <div class="beneficio5">
+        <img src="./Imágenes/Ícono5.png" alt="Icono 5" class="icono">
+        <h3>Integración con dispositivos inteligentes</h3>
+        <p>Sincroniza la app con tu smartwatch o dispositivos móviles para recibir recordatorios en tiempo real y llevar tu progreso siempre contigo.</p>
+      </div>
+      <div class="beneficio6">
+        <img src="./Imágenes/ícono6.png" alt="Icono 6" class="icono">
+        <h3>Flexibilidad para adaptar tus rutinas a tu estilo de vida</h3>
+        <p>Modifica tus hábitos y horarios en cualquier momento para ajustarlos a los cambios en tu día a día.</p>
+      </div>
+    </div>
+</section>
+
+<section class="experiencias" id="exp">
+  <h2>Experiencia de usuarios</h2>
+  <div class="tarjeta">
+    <img src="./Imágenes/Carita.png" alt="Carita feliz" class="icono-carita">
+    <p>“Better You me ha ayudado a establecer una rutina de meditación diaria. ¡Es increíble!”<br> — Laura</p>
+    <div class="estrellas">★★★★★</div>
+  </div>
+  <div class="tarjeta">
+    <img src="./Imágenes/Carita.png" alt="Carita feliz" class="icono-carita">
+    <p>“Fácil de usar y perfecta para organizar mis días.”<br> — Martín</p>
+    <div class="estrellas">★★★★★</div>
+  </div>
+  <div class="tarjeta">
+    <img src="./Imágenes/Carita.png" alt="Carita feliz" class="icono-carita">
+    <p>“Los recordatorios me mantienen enfocada, y ver mis avances en los gráficos es súper motivador. ¡Recomendada al 100%!”<br> — Laura</p>
+    <div class="estrellas">★★★★★</div>
+  </div>
+</section>
+
+
+  <section class="preguntasfrecuentes" id="pf">
+    <h2>Preguntas Frecuentes</h2>
+    <details class="preguntas1">
+      <summary>¿Es gratis la aplicación?</summary>
+      <p>Sí, ofrecemos una versión gratuita y una premium con funciones adicionales.</p> 
+    </details>
+    <details class="preguntas2">
+      <summary>¿Puedo sincronizar la app con otras plataformas?</summary>
+      <p>Better You se integra con Google Calendar para facilitar la planificación.</p> 
+    </details>
+    <details class="preguntas3">
+      <summary>¿Qué tipo de ejercicios de bienestar mental incluye la app?</summary>
+      <p>Better You ofrece prácticas como respiración consciente, reflexiones guiadas y pequeños ejercicios diarios de gratitud para ayudarte a reducir el estrés y mantener un equilibrio emocional.</p> 
+    </details>
+  </section>
+
+  <div class="betteryoulogo">
+    <img src="./Imágenes/APP_LOGO.png" alt="">
+  </div>
+
+  <section class="descagar-app">
+    <h4>Descarga Better You</h4>
+    <p>Da el primer paso hacia una vida más organizada y saludable.</p>
+    <a href="#" class="calltoaction-boton2">Descarga la App</a>
+  </section>
+
+  <footer class="footer">
+    <p>Better You - Creado por Victoria Benavide</p>
+    <h4>Síguenos en nuestras redes sociales</h4>
+    <div class="redes-links">
+      <a href="#">Instagram</a> | <a href="#">Twitter</a> | <a href="#">Facebook</a>
+    </div>
+  </footer>
+
+</body>
+</html>
